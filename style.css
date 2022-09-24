@@ -1,0 +1,441 @@
+@font-face{
+    font-family: "conteudo";
+    src: url(fonte/Conteudo.ttf);
+}
+@font-face{
+    font-family: "textos";
+    src: url(fonte/SecularOne-Regular.ttf);
+}
+:root{
+    --mainclr:#239f85;
+    --secclr:#ff5d22;
+    --third:#DFE4E0;
+    --mainafterclr:hsl(167, 81%, 79%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    
+}
+.header{
+    padding: 1rem 7%;
+    background-color: var(--mainclr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header #logo{
+    width: 50px;
+}
+.barradenav a{
+    color: whitesmoke;
+    font-size: 1.8rem;
+    margin-left: 13rem;
+    position: relative;
+    font-family: 'conteudo', Arial, sans-serif;
+}
+.icones div{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: white;
+    display: none;
+}
+.icones a{
+    color: white;
+    background: var(--secclr);
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: .5s;
+}
+.icones a:hover{
+    background: transparent;
+    border: 1px solid var(--secclr);
+}
+
+.imagem-de-fundo{
+    background: url(img/doutora.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 6%;
+    position: relative;
+
+}
+.conteudo-de-fundo{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 40%;
+    transform: translate(-80%);
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.conteudo-de-fundo h1{
+    color: #71de83;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.conteudo-de-fundo p{
+    font-size: 23px;
+    margin-bottom: 45px;
+    font-family: 'conteudo', Arial, sans-serif;
+    color: #49d560;
+}
+
+.conteudo-de-fundo a{
+    background: var(--secclr);
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+    transition: .5s;
+}
+.conteudo-de-fundo a:hover{
+    background: transparent;
+    border: 1px solid var(--secclr);
+    color: black;
+}
+.sobre{
+    padding: 6rem 7%;
+    background: var(--third);
+}
+#veio{
+    border-radius: 10px;
+}
+.sobre-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.sobre-interior{
+    flex: 1 1 45rem;
+}
+
+.sobre-interior .img-do-sobre-interior img{
+    width: 100%;
+}
+.config-do-conteudo1{
+    width: 80%;
+}
+.config-do-conteudo1 h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #0a2929;
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.config-do-conteudo1 p{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: 'textos', Arial, sans-serif;
+    color: #145252;
+}
+.config-do-conteudo1 a{
+    background: var(--secclr);
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: .5s;
+}
+.nossos-servicos{
+    padding: 4rem 7%;
+}
+.conteudo-dos-servicos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.conteudo-da-esquerda{
+    flex: 1 1 45rem;
+    position: relative;
+    left: 80%;
+    width: 50%;
+    transform: translate(-80%);
+    text-align: center;
+    background-image: linear-gradient(to bottom,skyblue, rgb(182, 230, 249), rgb(179, 217, 233));
+    color: black;
+}
+.conteudo-da-direita{
+    flex: 1 1 45rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.conteudo-da-esquerda h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.conteudo-da-esquerda p{
+    font-size: 25px;
+    font-family: 'textos', Arial, sans-serif;
+    color: #145252;
+}
+.conteudo-da-direita .right-btn a{
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    color: white;
+    background: var(--secclr);
+}
+.conteudo-da-direita .right-btn a:hover{
+    border: 1px solid var(--secclr);
+    background: transparent;
+    color: black;
+}
+.main-services{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.servicos-conteudo{
+    flex: 1 1 300px;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+.servicos-conteudo h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.servicos-conteudo p{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+.servicos p{
+    font-family: 'textos', Arial, sans-serif;
+    font-size: 20px;
+    color: #145252;
+}
+.servicos h2{
+    background-image: linear-gradient(to bottom, rebeccapurple, rgb(22, 58, 156), rgb(26, 120, 202));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+.galeria-geral{
+    padding: 4rem 7%;
+}
+.galeria-geral h1{
+    color: var(--mainclr);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.conteudo-gal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.item-galeria{
+    flex:1 1 300px;
+
+}
+.item-galeria img{
+    width: 100%;
+    transition: .3s;
+}
+.item-galeria img:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+.gal3{
+    width: 292px;
+}
+.escolher{
+    padding: 4rem 20%;
+}
+.menu-escolher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.escolher-interior{
+    flex: 1 1 45rem;
+}
+.escolher-interior img{
+    width: 100%;
+}
+.escolher-interior h1{
+    font-size: 40px;
+    color: var(--mainclr);
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.escolher-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    font-family: 'textos', Arial, sans-serif;
+    color: #145252;  
+}
+.sim1{
+    width: 60rem;
+    height: 40rem;
+    border-radius: 30px;
+}
+.sim2{
+    width: 60rem;
+    height: 40rem;
+}
+.sim3{
+    width: 60rem;
+    height: 40rem;
+}
+.icone i{
+    width: 30px;
+    height: 40px;
+    line-height: 1rem;
+    background: white;
+    font-size: 80px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icone-conteudo{
+    padding: 0 4rem;
+}
+.icone-conteudo p{
+    font-size: 2rem;
+    line-height: 1;
+}
+.footer{
+    padding: 6rem 7%;
+    background: var(--third);
+}
+.main-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.inner-footer{
+    flex: 1 1 200px;
+}
+.inner-footer h2{
+    font-size: 2rem;
+    color: black;
+}
+.inner-footer a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    display: block;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.rede{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+}
+.rede-conteudo h1{
+    font-size: 1.8rem;
+    color: green;
+}
+.rede-conteudo h2{
+    font-size: 1.8rem;
+    color: purple;
+}
+.rede-conteudo p{
+    font-size: 1.5rem;
+}
+.inner-footer a:hover{
+    margin-left: 10px;
+}
+@media (max-width:767px) {
+
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    .icone div{
+        display: initial;
+    }
+    .barradenav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--secclr);
+        display: flex;
+        
+        align-items: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+
+    
+    .barradenav a{
+        display: block;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 1rem;
+        padding: 1rem;
+        color: black;
+    }
+    .conteudo-de-fundo{
+        
+        width: 100%;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%);
+       padding-left: 5rem;
+    }
+    .sobre-interior .img-do-sobre-interior img{
+        margin-top: 20px;
+    }
+
+    .conteudo-da-direita{
+       
+        justify-content: flex-start;
+    
+    }
+
+
+
+
+}
